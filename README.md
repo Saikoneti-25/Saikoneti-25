@@ -1,113 +1,64 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+<h1 align="center">👨‍⚕️ Dr. Sai Kumar Koneti</h1>
+<p align="center"><strong>Health Informatics | Clinical Research | Data Science</strong></p>
 
-export default function PortfolioPage() {
-  return (
-    <main className="min-h-screen bg-gradient-to-tr from-sky-50 via-emerald-100 to-white text-gray-800 font-sans">
-      <section className="text-center py-16">
-        <h1 className="text-5xl font-bold text-sky-800">👨‍⚕️ Dr. Sai Kumar Koneti</h1>
-        <p className="text-xl text-gray-600 mt-4">Health Informatics • Clinical Research • Data Science</p>
+---
 
-        <div className="mt-6 flex justify-center gap-4 flex-wrap">
-          <a href="mailto:konetisaikumar27@gmail.com">
-            <img src="https://img.shields.io/badge/Email-grey?style=flat&logo=gmail" />
-          </a>
-          <a href="https://www.linkedin.com/in/dr-sai-kumar-5142a4226/">
-            <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin" />
-          </a>
-          <img src="https://img.shields.io/badge/Health%20Informatics%20-Masters-green" />
-          <img src="https://img.shields.io/badge/Open%20to-Collaborations-purple" />
-        </div>
-      </section>
+### 👋 About Me
 
-      <section className="max-w-6xl mx-auto px-4 py-8">
-        <h2 className="text-3xl font-bold text-center text-emerald-700 mb-8">🚀 Featured Projects</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            {
-              title: "Heart Disease Readmission (MIMIC-IV)",
-              desc: "ML models predicting 30-day readmission risk; achieved 71.8% accuracy.",
-              icon: "🩺"
-            },
-            {
-              title: "Depression Treatment Prediction",
-              desc: "LASSO regression model using NIH All of Us data to predict response to Venlafaxine.",
-              icon: "🧠"
-            },
-            {
-              title: "FACTORS: AI Tool Evaluation",
-              desc: "Framework for evaluating Gen AI tools like Synthesia for public health use.",
-              icon: "🧪"
-            },
-            {
-              title: "Brain Tumor Detection",
-              desc: "CAD system using MATLAB & PyTorch for MRI tumor analysis.",
-              icon: "🧬"
-            },
-            {
-              title: "Dementia Caregiver Education",
-              desc: "Created Gen AI videos to educate caregivers on dementia support techniques.",
-              icon: "👵"
-            },
-            {
-              title: "Tableau Readmission Dashboards",
-              desc: "Built Tableau dashboards to visualize hospital trends and inform decision-making.",
-              icon: "📊"
-            }
-          ].map(({ title, desc, icon }, i) => (
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              key={i}
-              className="rounded-xl border border-gray-200 bg-white p-6 shadow-md hover:shadow-lg"
-            >
-              <h3 className="text-xl font-semibold text-indigo-700 mb-2">{icon} {title}</h3>
-              <p className="text-gray-700 text-sm">{desc}</p>
-            </motion.div>
-          ))}
-        </div>
-      </section>
+Hi there! I’m **Sai Kumar**, a medical doctor turned health informatician, passionate about blending clinical experience with data science to improve healthcare delivery.  
+I’m currently pursuing my Master’s in Health Informatics at **George Mason University** with a 3.95 GPA.
 
-      <section className="py-12 bg-white mt-16">
-        <h2 className="text-3xl font-bold text-center text-sky-700 mb-10">📂 Work Areas</h2>
-        <div className="flex flex-wrap justify-center gap-8 px-6">
-          {[
-            {
-              title: "Graduate Research Assistant (HAP)",
-              desc: "Presented SDOH and nursing home research at AcademyHealth 2025. Created educational content using AI.",
-              color: "bg-sky-100"
-            },
-            {
-              title: "MSHI Projects",
-              desc: "Predictive analytics with EHR data, clinical modeling, Tableau visualization, and mental health tracking.",
-              color: "bg-emerald-100"
-            },
-            {
-              title: "Parexel Internship",
-              desc: "RWE insights using TriNetX, Purple Labs. Focused on HFpEF vs. HFrEF treatment outcomes.",
-              color: "bg-violet-100"
-            },
-            {
-              title: "Independent Projects",
-              desc: "AI-generated videos for caregiver education, brain imaging analysis, and digital tool comparisons.",
-              color: "bg-orange-100"
-            }
-          ].map(({ title, desc, color }, i) => (
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              key={i}
-              className={`rounded-full w-72 h-72 flex flex-col justify-center items-center p-6 text-center shadow-md ${color}`}
-            >
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">{title}</h3>
-              <p className="text-gray-600 text-sm">{desc}</p>
-            </motion.div>
-          ))}
-        </div>
-      </section>
+- 💡 Skilled in **predictive modeling**, **EHR analytics**, and **real-world evidence**
+- 🧠 Passionate about **AI in public health** and **digital health education**
+- 📍 Based in Fairfax, Virginia (open to relocation)
 
-      <footer className="text-center py-8 text-sm text-gray-500">
-        <p>📫 konetisaikumar27@gmail.com | 💼 <a className="underline" href="https://www.linkedin.com/in/dr-sai-kumar-5142a4226/">LinkedIn</a></p>
-        <p>© 2025 Sai Kumar Koneti. All rights reserved.</p>
-      </footer>
-    </main>
-  );
-}
+---
+
+### 🚀 Featured Projects
+
+| Project | Description |
+|--------|-------------|
+| 🩺 **Heart Disease Readmission (MIMIC-IV)** | ML model (Random Forest) to predict 30-day readmission; achieved 71.8% accuracy |
+| 🧠 **Depression Treatment Prediction** | Used All of Us dataset to build LASSO regression models for antidepressant response |
+| 🧪 **FACTORS: AI Tool Evaluation** | Evaluated Gen AI tools like Synthesia and Sora for health communication |
+| 🧬 **Brain Tumor Detection** | CAD system using PyTorch & MATLAB for brain MRI image segmentation |
+| 👵 **Dementia Caregiver Education** | Developed Gen AI video modules using Runway ML, Firefly |
+| 📊 **Tableau Dashboards** | Visualized hospital readmission trends and outcomes across departments |
+
+---
+
+### 💼 Work Areas
+
+```text
+📚 George Mason University – Graduate Research Assistant (HAP)
+📈 Parexel – Data Strategy Intern (Heart Failure RWE analysis)
+🧠 Independent Projects – Mental health trackers, Gen AI tools
+📊 MSHI Capstone – Predictive modeling, Tableau, PHQ-9 survey automation
+```
+
+---
+
+### 🛠️ Tech Stack
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"/>
+  <img src="https://img.shields.io/badge/FHIR-orange?style=for-the-badge"/>
+</p>
+
+---
+
+### 📫 Contact
+
+- 📧 Email: [konetisaikumar27@gmail.com](mailto:konetisaikumar27@gmail.com)
+- 💼 LinkedIn: [dr-sai-kumar-5142a4226](https://www.linkedin.com/in/dr-sai-kumar-5142a4226/)
+- 📝 [Download My Resume (PDF)](#)
+
+---
+
+> “Empowering clinical decisions and healthcare equity through intelligent, data-driven systems.”
+
+---
